@@ -1,1 +1,112 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Studio - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="Hair Studio Logo" class="logo-img">
+                <span class="logo-text">HAIR STUDIO</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" style="background-image: url('Hair/2d.webp'); background-size: cover; background-position: center;">
+            <div class="hero-content">
+                <h1>Welcome to Hair Studio</h1>
+                <h2>Where Style Meets Excellence</h2>
+                <a href="#booking" class="cta-button">Book Now</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>21 Alexandra Rd, Irene Security Estate, Centurion</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>081 333 6302</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@mabalaaka.co.za</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking">
+            <h2>Book Your Appointment</h2>
+            <form id="booking-form" action="send_email.php" method="post">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Your Phone" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                    <select id="service" required>
+                        <option value="">Select Service</option>
+                        <option value="haircut">Haircut</option>
+                        <option value="coloring">Protein/Moisture Treatment</option>
+                        <option value="styling">Hair Styling</option>
+                        <option value="trimming">Hair Trimming</option>
+                        <option value="treatment">Hair Treatment</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-button">Book Now</button>
+            </form>
+        </section>
+
+        <section id="map" class="map-section">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30591910525!2d-74.25986432970718!3d40.697149422113014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1647043087964!5m2!1sen!2s" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1BUx8TLuWR/" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/+27813336302" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/mabalaaka_hairstudio?igsh=MWwyeHUxcmU4bHV1OQ==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:info@mabalaaka.co.za" class="social-icon"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2025 Mabala AKA Hair Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
